@@ -1,14 +1,16 @@
 {
-    "name": "oomphinc/google_oauth",
-    "description": "Authenticate your Drupal 8 site with Google OAuth",
-    "require": {
-        "php": ">=5.5.9",
-        "google/apiclient": "1.1"
-    },
-    "authors": [
-        {
-            "name": "Ben Doherty",
-            "email": "ben@oomphinc.com"
-        }
-    ]
+  "name": "oomphinc/google_oauth",
+  "description": "Authenticate your Drupal 8 site with Google OAuth",
+  "license": "MIT",
+  "require": {
+    "php": ">=5.5.9",
+    "google/apiclient": "1.1"
+  },
+  "authors": [
+    {
+      "name": "Ben Doherty",
+      "email": "ben@oomphinc.com"
+    }
+  ],
+  "minimum-stability": "dev"
 }

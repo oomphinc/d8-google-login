@@ -1,0 +1,10 @@
+<?php
+
+use Drupal\Core\Field\BaseFieldDefinition;
+/**
+ * Implements hook_menu_links_discovered_alter().
+ */
+function google_oauth_menu_links_discovered_alter(&$links) {
+	print_r($links);
+}
+

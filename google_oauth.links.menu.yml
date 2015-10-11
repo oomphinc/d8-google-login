@@ -1,0 +1,6 @@
+google_oauth.login:
+  description: 'Log in with your Google account.'
+  weight: 0
+  menu_name: account
+  class: Drupal\google_oauth\Plugin\Menu\GoogleLoginMenuLink
+  route_name: google_oauth.login

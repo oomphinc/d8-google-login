@@ -1,0 +1,13 @@
+google_oauth.authenticate:
+  path: '/google-authenticate'
+  defaults:
+    _controller: '\Drupal\google_oauth\Controller\GoogleOAuthController::authenticate'
+  requirements:
+    _permission: 'access content'
+google_oauth.login:
+  path: '/google-login'
+  defaults:
+    _controller: '\Drupal\google_oauth\Controller\GoogleOAuthController::login'
+  requirements:
+    _permission: 'access content'
+

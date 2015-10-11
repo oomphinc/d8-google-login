@@ -1,6 +1,6 @@
 {
     "name": "oomph/google_oauth",
-    "description": "Authenticate with Google OAuth",
+    "description": "Authenticate your Drupal 8 site with Google OAuth",
     "require": {
         "php": ">=5.5.9",
         "google/apiclient": "1.1"

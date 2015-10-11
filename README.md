@@ -4,11 +4,9 @@ Allows users to log in to your site using their google account. Creates a new ac
 
 # Installation
 
-* Check out this repository into your site's `/modules` directory.
+* Clone this repository into your site's `/modules` directory.
 
-* Install the Google API client library.
-
-Include the `google/apiclient` composer package in your Drupal 8 site with the following command:
+* Install the `google/apiclient` composer package in your Drupal 8 site with the following command:
 
 ```sh
 $ composer require google/apiclient

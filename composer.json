@@ -2,6 +2,7 @@
     "name": "oomph/google_oauth",
     "description": "Authenticate with Google OAuth",
     "require": {
+        "php": ">=5.5.9",
         "google/apiclient": "1.1"
     },
     "authors": [
@@ -9,6 +10,5 @@
             "name": "Ben Doherty",
             "email": "ben@oomphinc.com"
         }
-    ],
-    "minimum-stability": "stable"
+    ]
 }

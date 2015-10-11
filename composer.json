@@ -1,5 +1,5 @@
 {
-    "name": "oomph/google_oauth",
+    "name": "oomphinc/google_oauth",
     "description": "Authenticate your Drupal 8 site with Google OAuth",
     "require": {
         "php": ">=5.5.9",

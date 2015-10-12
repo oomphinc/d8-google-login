@@ -4,7 +4,7 @@
   "license": "MIT",
   "require": {
     "php": ">=5.5.9",
-    "google/apiclient": "1.1"
+    "google/apiclient": "1.1@dev"
   },
   "type": "drupal-module",
   "authors": [

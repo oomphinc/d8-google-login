@@ -6,6 +6,7 @@
     "php": ">=5.5.9",
     "google/apiclient": "1.1"
   },
+  "type": "drupal-module",
   "authors": [
     {
       "name": "Ben Doherty",

@@ -47,8 +47,6 @@ class GoogleOAuthController extends ControllerBase {
 	}
 
 	/**
-	 *
-	/**
 	 * Authenticate, save user details, return access token
 	 */
 	public function authenticate() {
@@ -81,7 +79,7 @@ class GoogleOAuthController extends ControllerBase {
 				$user = User::create([
 					'name' => $user_name,
 					'mail' => $user_email,
-					'status' => 'active',
+					'status' => 1,
 					'picture' => $user_picture,
 				]);
 

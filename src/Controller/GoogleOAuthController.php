@@ -60,9 +60,7 @@ class GoogleOAuthController extends ControllerBase {
     catch (\Exception $e) {
       return new RedirectResponse('/');
     }
-
-    $token = json_decode($this->client->getAccessToken());
-
+    
     $plus = new Google_Service_Oauth2($this->client);
     $userinfo = $plus->userinfo->get();
 

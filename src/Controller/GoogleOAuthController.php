@@ -91,6 +91,6 @@ class GoogleOAuthController extends ControllerBase {
 
     user_login_finalize($user);
 
-    return $this->redirect('user.page');
+    return $this->redirect('<front>');
   }
 }

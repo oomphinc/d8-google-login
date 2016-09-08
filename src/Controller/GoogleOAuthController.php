@@ -60,7 +60,7 @@ class GoogleOAuthController extends ControllerBase {
     catch (\Exception $e) {
       return new RedirectResponse('/');
     }
-    
+
     $plus = new Google_Service_Oauth2($this->client);
     $userinfo = $plus->userinfo->get();
 
@@ -80,6 +80,8 @@ class GoogleOAuthController extends ControllerBase {
           'picture' => $user_picture,
         ]);
 
+        // hook_google_oauth_create_user_alter($user, $userinfo);
+        \Drupal::moduleHandler()->alter('google_oauth_create_user', $user, $userinfo);
         $user->save();
       }
       catch (\Exception $e) {

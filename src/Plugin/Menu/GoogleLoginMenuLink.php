@@ -69,12 +69,12 @@ class GoogleLoginMenuLink extends MenuLinkDefault {
     }
   }
 
-	/**
-	 * {@inheritdoc}
-	 */
-	public function isEnabled() {
-		return !$this->currentUser->isAuthenticated();
-	}
+  /**
+   * {@inheritdoc}
+   */
+  public function isEnabled() {
+    return !$this->currentUser->isAuthenticated();
+  }
 
   /**
    * {@inheritdoc}

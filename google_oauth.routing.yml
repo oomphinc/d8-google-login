@@ -3,11 +3,11 @@ google_oauth.authenticate:
   defaults:
     _controller: '\Drupal\google_oauth\Controller\GoogleOAuthController::authenticate'
   requirements:
-    _permission: 'access content'
+    _access: 'TRUE'
 google_oauth.login:
   path: '/google-login'
   defaults:
     _controller: '\Drupal\google_oauth\Controller\GoogleOAuthController::login'
   requirements:
-    _permission: 'access content'
+    _access: 'TRUE'
 

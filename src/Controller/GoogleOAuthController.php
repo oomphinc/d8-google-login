@@ -69,6 +69,17 @@ class GoogleOAuthController extends ControllerBase {
     $user = user_load_by_mail($user_email);
 
     if (!$user) {
+      $user_config = \Drupal::config('user.settings');
+      $registration_allowed = $user_config->get('register');
+      if ('visitors' != $registration_allowed) {
+          // don't create a new account if site settings don't allow to do so
+          drupal_set_message(
+            t('You can\'t login using this account. Please use another e-mail address or ask an administrator to setup an account.'),
+            'error'
+          );
+          return new RedirectResponse('/');
+      }
+      
       $user_name = $userinfo['name'];
       $user_picture = $userinfo['picture'];
 

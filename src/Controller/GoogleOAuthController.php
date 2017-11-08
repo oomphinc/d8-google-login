@@ -17,12 +17,12 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 class GoogleOAuthController extends ControllerBase {
     
   private $client;
-  protected $configFactory;
+  protected $config_factory;
 
   public function __construct(ConfigFactoryInterface $config_factory) {
     $private_path = PrivateStream::basePath();
     $config_file = $private_path . '/google-oauth-secret.json';
-    $this->configFactory = $config_factory;
+    $this->config_factory = $config_factory;
 
     if (!is_readable($config_file)) {
       // Nag ?
@@ -83,7 +83,7 @@ class GoogleOAuthController extends ControllerBase {
     $user = user_load_by_mail($user_email);
 
     if (!$user) {
-      $user_settings = $this->configFactory->get('user.settings');
+      $user_settings = $this->config_factory->get('user.settings');
       if ($user_settings->get('register') !== 'visitors') {
           // If settings don't allow to create a new account, then don't.
           drupal_set_message(

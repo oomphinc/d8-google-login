@@ -1,6 +1,9 @@
 # Drupal 8 Google Login
 
-Allows users to log in to your site using their google account. Creates a new account for a google user. This module requires the `google/apiclient` composer module, specified in this plugin's `composer.json` file.
+Allows users to log in to your site using their Google account.
+Creates a new Drupal account when the Google account is not yet known, unless
+site settings disallow user self-registration.
+This module requires the `google/apiclient` composer module, specified in this plugin's `composer.json` file.
 
 # Installation
 

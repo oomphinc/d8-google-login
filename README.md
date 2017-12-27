@@ -1,3 +1,5 @@
+**THIS MODULE IS NO LONGER MAINTAINED. Please use the [Google Plus Login] module on Drupal.org instead. Thank you.**
+
 # Drupal 8 Google Login
 
 Allows users to log in to your site using their Google account.
@@ -22,3 +24,5 @@ $ composer require google/apiclient
 * Download the client ID JSON file and save with the name `google-oauth-secret.json` into your site's `private` directory, as configured by the `file_private_path` setting in your site's `settings.php`.
 
 * Enable the `google_oauth` module!
+
+[Google Plus Login]: https://www.drupal.org/project/google_plus_login
